@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Negative Space</title>
+    <style>
+        :root {
+            --bg-color: #0b0e17;
+            --card-bg: #131926;
+            --text-main: #f0f4f8;
+            --text-muted: #94a3b8;
+            --accent-cyan: #38bdf8;
+            --accent-gold: #f59e0b;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --pill-bg: rgba(56, 189, 248, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 36px 0 24px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--pill-bg);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 999px;
+            padding: 6px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #ffffff 40%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            background: #1e293b;
+            color: #cbd5e1;
+            border: 1px solid var(--border-color);
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--accent-cyan);
+            color: #0b0e17;
+            border-color: var(--accent-cyan);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            margin-bottom: 14px;
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            margin: 18px 0 8px;
+            color: var(--accent-gold);
+        }
+
+        p, ul {
+            margin-bottom: 14px;
+            color: #cbd5e1;
+            font-size: 0.98rem;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(56, 189, 248, 0.4);
+        }
+
+        a:hover {
+            color: #7dd3fc;
+            border-bottom-style: solid;
+        }
+
+        .highlight-box {
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 4px solid var(--accent-gold);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 0 16px;
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Official Legal Document</div>
+            <h1>Negative Space</h1>
+            <p class="subtitle">Privacy Policy • Chính Sách Quyền Riêng Tư</p>
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">English</button>
+                <button class="lang-btn" id="btn-vi" onclick="setLanguage('vi')">Tiếng Việt</button>
+            </div>
+        </header>
+
+        <!-- ENGLISH CONTENT -->
+        <div id="content-en">
+            <div class="card">
+                <h2>1. Introduction</h2>
+                <p><strong>Negative Space</strong> ("we", "our", or "the Game") is an offline-capable indie puzzle game developed by <strong>NBK Studio</strong> (Package Name: <code>com.negativespace.shift</code>).</p>
+                <p>We are deeply committed to respecting and protecting the privacy of our players. This Privacy Policy explains what data the Game handles, how it is used, and how we safeguard your personal information in compliance with Google Play Developer Policies and global privacy laws.</p>
+                <div class="highlight-box">
+                    <strong>Summary:</strong> Negative Space does not require user accounts, does not collect personal names, emails, or phone numbers, and stores all game progress locally on your device.
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>2. Information Collection and Use</h2>
+                <h3>A. Personal Information</h3>
+                <p>We do <strong>not</strong> collect, store, or transmit any Personally Identifiable Information (PII) such as your real name, email address, physical address, contacts, or phone number.</p>
+
+                <h3>B. Local Gameplay Data (Stored on Your Device)</h3>
+                <p>The Game stores non-personal game progress locally on your device using standard secure storage (<code>PlayerPrefs</code>). This data includes:</p>
+                <ul>
+                    <li>Completed levels, stars earned (★), and chapter progress.</li>
+                    <li>In-game currency (Spirit Shards ◆) and unlocked character skins.</li>
+                    <li>Audio, music mute settings, haptic toggle, and language preferences.</li>
+                </ul>
+                <p>This data never leaves your device and can be erased at any time by uninstalling the application or clearing the app storage in your Android system settings.</p>
+            </div>
+
+            <div class="card">
+                <h2>3. Device Permissions</h2>
+                <p>Negative Space requests only the minimum necessary device permissions to function as intended:</p>
+                <ul>
+                    <li><strong><code>android.permission.VIBRATE</code></strong>: Used solely to provide tactile haptic feedback when you move, push blocks, or perform a realm shift. You can turn this off at any time via the in-game Settings menu.</li>
+                </ul>
+                <p>The Game does <strong>not</strong> request access to your camera, microphone, precise location, storage files, contacts, or phone state.</p>
+            </div>
+
+            <div class="card">
+                <h2>4. Third-Party Services & Advertising</h2>
+                <p>In its initial release version (v1.0.0), Negative Space operates without active third-party advertising networks.</p>
+                <p>For future updates that may feature optional Rewarded Video Ads (e.g., via Google AdMob) to earn in-game Spirit Shards, third-party SDKs may process non-sensitive device identifiers such as the Google Advertising ID (<code>AD_ID</code>) in accordance with Google's policies and your device's privacy settings.</p>
+                <p>Third-party privacy policies:</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+                    <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Play Services & AdMob Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>5. Children's Privacy (COPPA Compliance)</h2>
+                <p>Negative Space is designed as a family-friendly zen puzzle game suitable for general audiences of all ages. We do not knowingly collect any personal information from children under the age of 13 (or under 16 in the European Economic Area). If you believe a child has provided us with personal information, please contact us immediately and we will take steps to remove it.</p>
+            </div>
+
+            <div class="card">
+                <h2>6. Data Security</h2>
+                <p>Because all gameplay state is maintained locally on your own mobile device, your data is protected by your device's native operating system sandboxing and encryption mechanisms.</p>
+            </div>
+
+            <div class="card">
+                <h2>7. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect game updates or legal requirements. Any modifications will be posted directly to this URL with an updated revision date.</p>
+            </div>
+
+            <div class="card">
+                <h2>8. Contact Us</h2>
+                <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or the Game, please reach out to us:</p>
+                <ul>
+                    <li><strong>Developer / Studio:</strong> NBK Studio</li>
+                    <li><strong>Application:</strong> Negative Space (<code>com.negativespace.shift</code>)</li>
+                    <li><strong>Email:</strong> <a href="mailto:contact.nbkstudio@gmail.com">contact.nbkstudio@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- VIETNAMESE CONTENT -->
+        <div id="content-vi" class="hidden">
+            <div class="card">
+                <h2>1. Giới Thiệu</h2>
+                <p><strong>Negative Space</strong> ("chúng tôi" hoặc "Trò chơi") là tựa game giải đố trí tuệ indie hoạt động ngoại tuyến (offline) được phát triển bởi <strong>NBK Studio</strong> (Mã gói ứng dụng: <code>com.negativespace.shift</code>).</p>
+                <p>Chúng tôi luôn tôn trọng và cam kết bảo vệ quyền riêng tư của người chơi. Chính sách Quyền Riêng Tư này giải thích cách thức trò chơi xử lý dữ liệu và cam kết bảo mật theo tiêu chuẩn Chính sách Nhà phát triển của Google Play cũng như các quy định pháp luật hiện hành.</p>
+                <div class="highlight-box">
+                    <strong>Tóm tắt:</strong> Negative Space không yêu cầu tạo tài khoản, không thu thập họ tên hay số điện thoại, và toàn bộ tiến trình chơi game được lưu trữ hoàn toàn nội bộ trên thiết bị của bạn.
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>2. Thu Thập & Sử Dụng Thông Tin</h2>
+                <h3>A. Thông Tin Cá Nhân</h3>
+                <p>Chúng tôi <strong>không</strong> thu thập, lưu trữ hoặc truyền tải bất kỳ thông tin định danh cá nhân nào như: họ tên thật, địa chỉ email, danh bạ, vị trí GPS hay số điện thoại của bạn.</p>
+
+                <h3>B. Dữ Liệu Tiến Trình Trò Chơi (Lưu trữ cục bộ)</h3>
+                <p>Trò chơi chỉ lưu các dữ liệu phi cá nhân trên bộ nhớ thiết bị của bạn (qua <code>PlayerPrefs</code>) để duy trì trải nghiệm liền mạch:</p>
+                <ul>
+                    <li>Các màn chơi đã vượt qua, số sao đạt được (★), và tiến độ mở khóa chương.</li>
+                    <li>Số dư Linh Thạch (◆) và các Skin nhân vật bạn đã sở hữu.</li>
+                    <li>Cài đặt âm thanh, rung haptic và lựa chọn ngôn ngữ hiển thị.</li>
+                </ul>
+                <p>Dữ liệu này hoàn toàn nằm trên máy của bạn và có thể xóa sạch bất kỳ lúc nào bằng cách xóa bộ nhớ ứng dụng hoặc gỡ cài đặt trò chơi.</p>
+            </div>
+
+            <div class="card">
+                <h2>3. Quyền Truy Cập Thiết Bị</h2>
+                <p>Negative Space chỉ yêu cầu quyền hệ thống tối thiểu cần thiết để vận hành:</p>
+                <ul>
+                    <li><strong><code>android.permission.VIBRATE</code></strong>: Chỉ dùng để tạo hiệu ứng rung phản hồi xúc giác nhẹ (Haptics) khi nhân vật di chuyển, đẩy khối hoặc thực hiện đảo cực Âm – Dương (SHIFT). Bạn có thể bật/tắt tính năng rung bất kỳ lúc nào trong menu Cài Đặt của game.</li>
+                </ul>
+                <p>Game <strong>tuyệt đối không</strong> yêu cầu truy cập máy ảnh, micro, tệp tin thẻ nhớ, vị trí hay danh bạ của bạn.</p>
+            </div>
+
+            <div class="card">
+                <h2>4. Dịch Vụ Của Bên Thứ Ba & Quảng Cáo</h2>
+                <p>Ở phiên bản phát hành đầu tiên (v1.0.0), Negative Space hoạt động độc lập và không kích hoạt quảng cáo bên thứ ba.</p>
+                <p>Trong các bản cập nhật tương lai nếu có bổ sung tính năng xem Video nhận thưởng (ví dụ qua Google AdMob), các dịch vụ của Google có thể xử lý mã định danh quảng cáo không định danh (<code>AD_ID</code>) theo quy định bảo mật của Google và cài đặt quyền riêng tư trên máy bạn.</p>
+                <p>Chính sách của đối tác cung cấp dịch vụ:</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính Sách Quyền Riêng Tư Của Google</a></li>
+                    <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Chính Sách Quảng Cáo Của Google Play Services & AdMob</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>5. Bảo Vệ Quyền Riêng Tư Trẻ Em</h2>
+                <p>Negative Space là trò chơi giải đố lành mạnh, phù hợp cho mọi lứa tuổi gia đình. Chúng tôi không cố ý thu thập bất kỳ thông tin nào từ trẻ em dưới 13 tuổi. Nếu bạn cho rằng có dữ liệu nào vô tình được gửi đến, vui lòng liên hệ với chúng tôi để xóa bỏ ngay lập tức.</p>
+            </div>
+
+            <div class="card">
+                <h2>6. An Toàn Dữ Liệu</h2>
+                <p>Vì toàn bộ trạng thái màn chơi và thông số được lưu trữ nội bộ trên chính điện thoại của bạn, dữ liệu được bảo vệ an toàn bởi cơ chế mã hóa và hộp cát (sandboxing) của hệ điều hành Android.</p>
+            </div>
+
+            <div class="card">
+                <h2>7. Thay Đổi Chính Sách</h2>
+                <p>Chính sách này có thể được điều chỉnh để phù hợp với các bản nâng cấp của trò chơi hoặc quy định mới. Mọi cập nhật sẽ được công bố trực tiếp tại đường dẫn trang này kèm ngày sửa đổi gần nhất.</p>
+            </div>
+
+            <div class="card">
+                <h2>8. Thông Tin Liên Hệ</h2>
+                <p>Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào về Chính Sách Quyền Riêng Tư này, xin vui lòng liên hệ:</p>
+                <ul>
+                    <li><strong>Nhà phát triển:</strong> NBK Studio</li>
+                    <li><strong>Ứng dụng:</strong> Negative Space (<code>com.negativespace.shift</code>)</li>
+                    <li><strong>Email hỗ trợ:</strong> <a href="mailto:contact.nbkstudio@gmail.com">contact.nbkstudio@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 NBK Studio. All rights reserved. • Negative Space</p>
+            <p style="margin-top: 6px; font-size: 0.8rem;">Last Updated: November 04, 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            const enContent = document.getElementById('content-en');
+            const viContent = document.getElementById('content-vi');
+            const btnEn = document.getElementById('btn-en');
+            const btnVi = document.getElementById('btn-vi');
+
+            if (lang === 'vi') {
+                enContent.classList.add('hidden');
+                viContent.classList.remove('hidden');
+                btnVi.classList.add('active');
+                btnEn.classList.remove('active');
+                document.documentElement.lang = 'vi';
+            } else {
+                viContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                btnEn.classList.add('active');
+                btnVi.classList.remove('active');
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
+</body>
+</html>
